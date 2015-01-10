@@ -1,0 +1,496 @@
+a {
+	text-decoration:none;
+	color:white;
+}
+a:hover
+ {
+ 	color:cyan;
+ }
+@font-face {
+	font-family: "tathva";
+	src: url(fonts/tathva.ttf) format("truetype");
+}
+body
+{
+	background-image: url(images/bg.jpg);  
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#wallpaper
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+
+/*Footer - Tathva - Start*/
+
+#footer
+{
+	background-image: url(images/footer.jpg);
+	position:absolute;
+	left:0px;
+	width:100%;
+	bottom:0px;
+	height: 120px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:white;
+}
+#overfooter
+{
+	background-image:url(images/overfooter.jpg);
+	width:100%;
+	height:10px;
+	position:absolute;
+	top:0px;
+	opacity:0.8;
+}
+#underfooter
+{
+	position:absolute;
+	background-image:url(images/underfooter.jpg);
+	width:100%;
+	height:10px;
+	bottom:0px;
+	opacity:0.8;
+}
+#nitc
+ {
+ 	height:90px;
+ 	width:220px;
+ 	float:left;
+ 	margin-top: 20px;
+ 	margin-left: 20px;
+
+ }
+#nitc-info
+ {
+ 	float:left;
+ 	margin-left:20px;
+ 	margin-top: -5px;
+ }
+#title
+{
+	font-style:"tathva";
+	color:#DDDDEE;
+	height:90px;
+	margin-left:20%;
+	margin-top:10px;
+	width:36%;
+	margin-right: 0px;
+	float:left;
+}
+#logodate
+{
+	float: left;
+}
+#tat 
+{
+	position: relative;
+	top: -10px;
+	font-size:500%;
+	cursor:pointer;
+	-webkit-text-stroke-width:1px;
+	-webkit-text-stroke-color:black;
+}
+#tat:hover
+{
+	text-shadow: 0px 0px 25px #DDDFFF;
+	color:#FFFFFF;
+}
+.logo
+{
+	float:left;
+	height:90%;
+}
+#date
+{
+	position: relative;
+	clear:none;
+	font-size:100%;
+	top: 0px;
+}
+#links
+ {
+ 	float:right;
+ 	height:90px;
+ 	margin-top:20px;
+ }
+
+/*Footer - Tathva - End*/
+
+.main
+ {
+ 	margin:2% 4%;
+ 	width:40%;
+ 	height: 75%;
+ 	float:left;
+
+ }
+
+/*Content*/
+.textheader
+{
+	text-align:center;
+	margin-top: 2%;
+	margin-left:2%;
+	width:96%;
+	background-color:none;
+	position:relative;
+	font-size:230%;
+	opacity:1.0;
+	height:8%;
+	border-radius:10px; 
+	color:white;
+}
+.textcontent
+{	
+	padding: 2%;
+	margin-left:2%; 
+	margin-top: 2%;
+	width:92%;
+	background-color:#111111;
+	position:relative;
+	height:78%;
+	border-radius:10px; 
+	color:white;
+	font-size:100%;
+	text-align:center;
+}
+
+/*Menu*/
+.menublocks
+{
+	width:26%;
+	color:#00AFFF;
+	position: relative;
+	font-size: 35px;
+	opacity: 0.8;
+	height:auto;
+	transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transform: perspective(300) rotateY(0deg); 
+	transformmoz perspective(300) rotateY(0deg); 
+	-ms-transform: perspective(300) rotateY(0deg); 
+	-ms-transform: mozctive(300) rotateY(0deg); 
+	-moz-transform: perspective(300) rotateY(0deg); 
+	-webkit-transform: perspective(300) rotateY(0deg); 
+}
+.menublocks>div:last-child
+{
+	border-bottom:0px;
+	font-size: 90%;
+}
+#blockleft
+{
+	float: left;
+	top:40px;
+	left: 40px;
+	transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+}
+#blockright
+{
+	float: right;
+	top: 40px;
+	right: 40px;
+	transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	text-align:right;
+}
+.menuitem
+{
+	border-bottom:2px dashed #AAAAAA;
+	background-image: url("images/footer.jpg"); 
+	position:relative;
+	height: 19%;
+	width:100%;
+	transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-webkit-transform: perspective(300) translateZ(0px);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	z-index: 0;	
+	text-align: center;
+}
+.leftanim
+{
+	transform: perspective(300) rotateY(20deg);
+	-moz-transform: perspective(300) rotateY(20deg);
+	-ms-transform: perspective(300) rotateY(20deg);
+	-webkit-transform: perspective(300) rotateY(20deg);
+}
+.rightanim
+{
+	transform: perspective(300) rotateY(-20deg);
+	-ms-transform: perspective(300) rotateY(-20deg);
+	-moz-transform: perspective(300) rotateY(-20deg);
+	-webkit-transform: perspective(300) rotateY(-20deg);
+}
+.blur
+{
+	-webkit-filter:blur(2px);
+}
+.menuhover
+{
+	-webkit-filter:blur(0px);
+	border-bottom:0px;
+	cursor: pointer;
+	z-index: 1;/* other wise others will tile over this*/
+	transform: perspective(300) translateZ(70px)
+	-ms-transform: perspective(300) translateZ(70px);
+	-webkit-transform: perspective(300) translateZ(70px);
+	-webkit-box-shadow: -10px 5px 50px 6px #000;
+}
+.content
+{
+	visibility: hidden;
+	opacity: 0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:0px;
+	height:0px;
+	transition:all .7s ease-in-out;
+	-webkit-transition:all .7s ease-in-out;
+	-moz-transition:all .7s ease-in-out;
+}
+.selected
+{
+	visibility:visible;
+	overflow: hidden;
+	top:0;
+	position:absolute;
+	left:22%;
+	width:56%;
+	height:80%;
+	border-radius: 25px;
+	transition:all .7s ease-in-out;
+	-webkit-transition:all .7s ease-in-out;
+	-moz-transition:all .7s ease-in-out;
+	opacity:0.8;
+	background-color: black;
+}
+.textcontent>img
+{
+	width:100%;
+	height:100%;
+	/*margin-left:1000px;*/
+}
+.textcontent>div
+{
+	margin:auto 1%;
+	width:100%;
+	text-align:center;
+	height:auto;
+}
+.contact
+{
+	width:auto;
+	float:left;
+}
+.quarter
+ {
+	width:25%;
+ }
+.third
+ {
+ 	width:33%;
+ }
+.half
+ {
+ 	width: 50%;
+ }
+h1
+{
+	font-size:150%;
+	margin:auto;
+	margin-bottom: 1%;
+	color:#AAAADD;
+}
+h2
+{
+	font-size:120%;
+	margin:auto;
+}
+h3
+{
+	margin:auto;
+	font-size:90%;
+}
+h4
+ {
+	color:#AAAADD;
+	margin:auto;
+	font-size:150%;
+	margin-bottom: 3% 	
+ }
+
+/*Gallery*/
+.thumbs
+{	
+	border-top: 0px;
+	bottom:0px;
+	margin-left:0px;
+	width:3240px;
+	height:100px;
+	cursor:pointer;
+}
+.thumbs>img
+{
+	float:left;
+	width:180px;
+	height:100%;
+	cursor: pointer;
+}
+#super
+{
+	bottom: 0px;
+	margin-top: 30px;
+	position: relative;
+	margin-left: 0px;
+	height:auto;
+	width:100%;
+	overflow: hidden;
+}
+#container
+{
+	z-index: 1;
+	width:100%;
+	height:400px;
+	transform: perspective(300) rotateY(0deg);
+	-webkit-transform: perspective(300) rotateY(0deg);
+	-ms-transform: perspective(300) rotateY(0deg);
+	-moz-transform: perspective(300) rotateY(0deg);
+	transform-style: preserve-3d;	
+	-webkit-transform-style: preserve-3d;	
+	-moz-transform-style: preserve-3d;	
+	-ms-transform-style: preserve-3d;	
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+}
+.back
+{
+	opacity: 0;
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+}
+.front
+{
+	opacity: 1;
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+}
+#container>img
+{
+	border:1px solid #021a40;
+	padding:4px;
+	background-color:white;
+	width:80%;
+	height: 100%;
+	margin-left: 10%;
+}
+#container>#twop
+{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width:80%;/*for smooth transition when gallery will hide(after odd number of clicks)*/
+	height: 100%;
+	transform: perspective(300) translateZ(-1px) rotateY(180deg); 
+	-webkit-transform: perspective(300) translateZ(-1px) rotateY(180deg); 
+	-moz-transform: perspective(300) translateZ(-1px) rotateY(180deg); 
+	-ms-transform: perspective(300) translateZ(-1px) rotateY(180deg); 
+}
+#back
+{
+	pointer-events:none;
+	position: absolute;
+	background: url("images/gallery/prev.png")  no-repeat;
+	top:40%;
+	margin-left: 0px;
+	width: 4%;
+	height: 6%;
+	cursor: pointer;
+	z-index: 3;
+	opacity:0;
+}
+#next
+{
+	opacity:0;
+	pointer-events:none;
+	position: absolute;
+	background: url("images/gallery/next.png") no-repeat;
+	top: 40%;
+	right: 0px;
+	width: 4%;
+	height: 6%;
+	cursor: pointer;
+	z-index: 4;
+}
+/* Gallery End*/
+.hide {
+	opacity:0;
+}
+.container1 
+{
+	display: table;
+	height: 100%;
+	position:absolute;
+	overflow: hidden;
+	width:100%;
+}
+.helper 
+{
+	#position: absolute;
+	#top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}	
+.content1 
+{
+	#position: relative;
+	#top: -50%;
+	margin:0px auto;
+	width:100%;
+}
+#credits
+ {
+ 	float:right;
+ 	width:25px;
+ 	height:120px;
+ 	background-color: #0B3C5C;
+ 	border-left: 2px dashed #AAAAAA;
+ }
+#creditsbox
+ {
+ 	background-color: black;
+ 	opacity:0.9;
+ 	position:absolute;
+ 	width:60%;
+ 	left:20%;
+ 	top:20%;
+ 	height:60%;
+ 	border-radius:10px;
+ }
+#welcome
+ {
+ 	position: absolute;
+ 	width:100%;
+ 	height:100%;
+ 	background-color: white;
+ 	z-index:5;
+ 	text-align: center;
+ }
